@@ -9,12 +9,12 @@
 </head>
 <body>
 
-    <form>
+    <form method="POST" action="../PHP/Login_bd.php">
         <img src="../HTML/IMG/profile-icon-login-head-icon-vector.jpg" alt="">        
         <label for="username">Usuario</label>
-        <input type="text" id="username" placeholder="Usuario" required>
+        <input type="text" id="username" placeholder="Usuario" name="usuario">
         <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Contraseña">
+        <input type="password" id="password" placeholder="Contraseña" name="contraseña">
         <div class="mostrar">
             <input type="checkbox" id="visible">
             <label for="visible">Mostrar Contraseña</label>
