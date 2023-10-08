@@ -67,3 +67,8 @@ form button:hover{
     opacity: .75;
     background-color: #5669FF;
 }
+
+miClass{
+    background-color: rgb(198, 0, 0);
+    border: #000000;
+}

@@ -13,7 +13,6 @@ if(mysqli_num_rows($validar) > 0){
 } else {
     echo ' 
     <script>
-         alert ("Contraseña incorrecta");
          window.location = "../HTML/Login.php";
     </script>
     ';
