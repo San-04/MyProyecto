@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  mysql-db:
+    image: mysql:5.7
+    ports:
+      - "3307:3306"
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: login
+      MYSQL_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: 123456
+    volumes:
+      - /ruta/local:/var/lib/mysql
+
+  php-app:
+    build:
+      context: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src/:/var/www/html
+    depends_on:
+      - mysql-db
