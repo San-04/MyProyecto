@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="../css/Login.css">
+    <link rel="stylesheet" href="../css/login.css">
 
 
 </head>
@@ -19,8 +19,8 @@
             <input type="checkbox" id="visible">
             <label for="visible">Mostrar Contraseña</label>
         </div>
-        <button type="submit" id="submit">Inicias Sesion</button>
+        <button type="button" id="enviar">Inicias Sesion</button>
     </form>
-     <Script src="../JS/Login.js"></Script>
+     <script src="../js/Login.js"></script>
 </body>
 </html>

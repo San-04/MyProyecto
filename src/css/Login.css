@@ -68,7 +68,10 @@ form button:hover{
     background-color: #5669FF;
 }
 
-miClass{
-    background-color: rgb(198, 0, 0);
-    border: #000000;
+input[type="password"].incompleto{
+    border: 1px solid red;
+}
+
+input[type="text"].incompleto{
+    border: 1px solid red;
 }
